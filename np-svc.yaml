@@ -8,7 +8,7 @@ metadata:
 spec: 
   type: NodePort
   selector:
-    app: np-svc
+    app: np-app
   ports:
   - name: np-svc-port
     protocol: TCP 
