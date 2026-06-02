@@ -1,0 +1,16 @@
+apiversion: v1
+kind: service
+metadata: 
+  name: ci-svc
+  namespace: practice-ns
+  labels:
+    app: ci-app
+spec: 
+  type: ClusterIP
+  selector:
+    app: ci-app
+  ports:
+  - name: ci-svc-port
+    protocol: TCP
+    port: 80
+    targetPort: 80

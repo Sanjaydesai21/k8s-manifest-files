@@ -1,0 +1,14 @@
+apiversion: v1
+kind: Pod 
+metadata:
+  name: ci-pod
+  labels:
+    app: ci-app
+  namespace: practice-ns
+spec: 
+  containers: 
+  - name: nginx-ci-container
+    image: nginx:latest
+    port: 
+    - name: nginx-port
+      containerPort: 80
