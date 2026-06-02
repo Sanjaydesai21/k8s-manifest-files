@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: np-pod
+  namespace: practice-ns
+  labels:
+    app: np-app
+spec:
+  containers:
+  - name: httpd-cont
+    image: httpd:latest
+    ports:  
+    - name: np-port
+      containerPort: 80
