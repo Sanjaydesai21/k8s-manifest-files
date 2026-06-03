@@ -15,7 +15,7 @@ spec:
         env: rc-label
     spec:
       containers:
-      - name: nginx-rc-contanier
+      - name: nginx-rc
         image: nginx:latest
         ports:
         - name: rc-container-port
