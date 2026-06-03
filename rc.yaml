@@ -18,7 +18,7 @@ spec:
       - name: nginx-rc
         image: nginx:latest
         ports:
-        - name: rc-container-port
+        - name: rc-cont-port
           containerPort: 80
 ...
 ---
