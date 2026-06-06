@@ -12,4 +12,5 @@ spec:
   volumeMode: Filesystem
   persistentVolumeReclaimPolicy: Retain
   storageclassName: standard
-  hostPath: /root/data
+  hostPath: 
+    path: /mnt/data
