@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: kong
   rules:
-  - host: k8s-kong-kongkong-8b58f4a45f-f21a5153cd28624f.elb.ap-south-1.amazonaws.com
+  - host: k8s-kong-konggate-84d21ec91e-8ab3bb1b40099cb9.elb.ap-south-1.amazonaws.com
     http:
       paths:
       - path: /
