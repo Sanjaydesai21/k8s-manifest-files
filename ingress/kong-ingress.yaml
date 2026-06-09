@@ -3,7 +3,8 @@ kind: Ingress
 metadata:
   name: kong-ingress
   annotations:
-    konghq.com/strip-path: "true"
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+    service.beta.kubernetes.io/aws-load-balancer-type: nlb
 spec:
   ingressClassName: kong
   rules:
