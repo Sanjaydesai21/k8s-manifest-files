@@ -18,7 +18,8 @@ spec:
       containers:
       - name: home-cont
         image: nginx:latest
-        containerPort: 80
+        ports:
+        - containerPort: 80
 ...
 ---
 apiVersion: v1
