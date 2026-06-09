@@ -7,8 +7,7 @@ metadata:
 spec:
   ingressClassName: kong
   rules:
-  - host: k8s-kong-konggate-84d21ec91e-8ab3bb1b40099cb9.elb.ap-south-1.amazonaws.com
-    http:
+  - http:
       paths:
       - path: /
         pathType: Prefix
@@ -17,6 +16,7 @@ spec:
             name: my-home-svc
             port:
               number: 80
+
       - path: /mobile
         pathType: Prefix
         backend:
@@ -24,10 +24,11 @@ spec:
             name: my-mobile-svc
             port:
               number: 80
+
       - path: /laptop
         pathType: Prefix
-        backend: 
-          service: 
+        backend:
+          service:
             name: my-laptop-svc
-            port: 
+            port:
               number: 8080
