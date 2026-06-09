@@ -10,19 +10,19 @@ spec:
   rules:
   - http:
       paths:
-      - path: /home
-        pathType: Prefix
-        backend:
-          service:
-            name: my-home-svc
-            port:
-              number: 80
-
       - path: /
         pathType: Prefix
         backend:
           service:
             name: my-mobile-svc
+            port:
+              number: 80
+              
+      - path: /home
+        pathType: Prefix
+        backend:
+          service:
+            name: my-home-svc
             port:
               number: 80
 
