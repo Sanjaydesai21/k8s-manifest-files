@@ -10,7 +10,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /
+      - path: /home
         pathType: Prefix
         backend:
           service:
@@ -18,7 +18,7 @@ spec:
             port:
               number: 80
 
-      - path: /mobile
+      - path: /
         pathType: Prefix
         backend:
           service:
