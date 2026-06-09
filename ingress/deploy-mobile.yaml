@@ -18,7 +18,8 @@ spec:
       containers:
       - name: mobile-cont
         image: httpd:latest
-        containerPort: 80
+        ports:
+        - containerPort: 80
 ...
 ---
 apiVersion: v1

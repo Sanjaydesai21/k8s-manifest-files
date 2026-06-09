@@ -18,7 +18,8 @@ spec:
       containers:
       - name: laptop-cont
         image: tomcat:latest
-        containerPort: 8080
+        ports:
+        - containerPort: 80
 ...
 ---
 apiVersion: v1
